@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta content="author" name="Alejandro Zuate">
+<meta charset="UTF-8" />
+<title>Galería de Fotos de Física</title>
+<style>
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #121212;
+    color: #eee;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #90caf9;
+  }
+
+  h2 {
+    color: #64b5f6;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #64b5f6;
+    padding-bottom: 6px;
+  }
+
+  #title{font-size: 100px; font-family: 'Times New Roman', Times, serif}
+
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .foto-carta {
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .foto-carta:hover {
+    transform: scale(1.05);
+  }
+
+  .foto-carta img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .sectitle {
+    padding: 12px 15px;
+    font-size: 16px;
+    text-align: center;
+    background: #292929;
+  }
+  @media (max-width: 1000px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<h1 id="title">Galería de Fotos de Física</h1>
+
+<section>
+  <h2>Ondas y Vibraciones</h2>
+  <div class="galeria">
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Aproximaci%C3%B3n_de_Boussinesq_(ondas_de_agua)" target="_blank"><img src="ondas.jpg"></a>
+      <div class="sectitle">Ondas en el agua</div>
+    </div>
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Vibraci%C3%B3n" target="_blank"><img src="vibra.avif"></a>
+      <div class="sectitle">Vibraciones y frecuencias</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Mecánica Clásica</h2>
+  <div class="galeria">
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Din%C3%A1mica" target="_blank"><img src="dinamica.jpg"></a>
+      <div class="sectitle">Movimiento y dinámica</div>
+    </div>
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Leyes_de_Newton#:~:text=Las%20leyes%20enunciadas%20por%20Newton,principales%2C%20formuladas%20en%20t%C3%A9rminos%20matem%C3%A1ticos." target="_blank"><img src="newton.webp" alt="Leyes de Newton"></a>
+      <div class="sectitle">Leyes de Newton</div>
+    </div>
+    
+  </div>
+</section>
+
+<section>
+  <h2>Electricidad y Magnetismo</h2>
+  <div class="galeria">
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Circuito" target="_blank"><img src="circuitos.webp"></a>
+      <div class="sectitle">Circuitos eléctricos</div>
+    </div>
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Magnetismo" target="_blank"><img src="magnetismo.jpg"></a>
+      <div class="sectitle">Magnetismo y campos</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Física Cuántica</h2>
+  <div class="galeria">
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Part%C3%ADcula_subat%C3%B3mica#:~:text=Una%20part%C3%ADcula%20subat%C3%B3mica%20o%20subparticula,los%20protones%20y%20los%20neutrones." target="_blank"><img src="subatomos.jpg"></a>
+      <div class="sectitle">Partículas subatómicas</div>
+    </div>
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Modelo_at%C3%B3mico" target="_blank"><img src="model.jpg"></a>
+      <div class="sectitle">Modelo atómico</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Astronomía y Cosmología</h2>
+  <div class="galeria">
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Galaxia#:~:text=Una%20galaxia%20(del%20griego%20%CE%B3%CE%B1%CE%BB%CE%B1%CE%BE%CE%AF%CE%B1%CF%82,estructura%20m%C3%A1s%20o%20menos%20definida." target="_blank"><img src="astronomia.webp"></a>
+      <div class="sectitle">Estrellas y galaxias</div>
+    </div>
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Sistema_solar" target="_blank"><img src="solar system.jpg"></a>
+      <div class="sectitle">Planetas y sistemas solares</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Termodinámica</h2>
+  <div class="galeria">
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Proceso_termodin%C3%A1mico" target="_blank"><img src="Termodinamica.webp"></a>
+      <div class="sectitle">Procesos termodinámicos</div>
+    </div>
+    <div class="foto-carta">
+      <a href="https://es.wikipedia.org/wiki/Conducci%C3%B3n_de_calor#:~:text=La%20transferencia%20de%20energ%C3%ADa%20t%C3%A9rmica,la%20segunda%20s%C3%AD%20lo%20hay." target="_blank"><img src="heat transfer.webp"></a>
+      <div class="sectitle">Transferencia de calor</div>
+    </div>
+  </div>
+</section>
+  <p style="text-align:center; margin-top: 40px; color: #90caf9; font-style: italic; font-size: 40px;">
+  Created by Alejandro Zuate
+</p>
+</body>
+</html>
